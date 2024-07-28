@@ -529,9 +529,11 @@ path {
 
 .testsection .test_right{
  flex: 1 1 60%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
  height: fit-content;
  width: 500px;
-
 }
 
 .testsection .test_left{

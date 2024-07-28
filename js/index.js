@@ -4,7 +4,6 @@ const windowpath = window.location.pathname;
 
 navlink.forEach(navli => {
 	const navlinkspath = new URL(navli.href).pathname;
-	console.log(navlinkspath);
 	if ((windowpath === navlinkspath) || (windowpath === '/index.html' && navlinkspath === '/')) {
 		navli.classList.add('active1');
 	}
@@ -111,7 +110,6 @@ const options = {
 	duration:1000,
 	interval: 500,
 	viewFactor: 0.5,
-	rest: true,
 }
 
 ScrollReveal().reveal('.reveal', {
