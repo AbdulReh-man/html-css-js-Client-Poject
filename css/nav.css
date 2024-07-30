@@ -3,7 +3,7 @@
 \*----------------------------*/
 :root {
   --body-color: #e4e9f7;
-  --nav-color: #4070f4;
+  --nav-color: #ff9900;
   --side-nav: #010718;
   --text-color: #fff;
   --search-bar: #f2f2f2;
@@ -20,7 +20,7 @@ nav {
 }
 
 .nav-item .active1{
-  background-color: #ff9900;
+  background-color: var(--nav-color);
   border-radius: 16px;
 }
 
@@ -50,6 +50,12 @@ nav .nav-bar .sidebarOpen {
 .menu .logo-toggle {
   display: none;
 }
+
+.logo-toggle .logo a{
+  text-shadow: 0 0 3px var(--nav-color)  , 0 0 5px white;
+  color: var(--text-color);
+}
+
 .nav-bar .nav-links {
   background: rgba(56, 52, 52, 0.15);
   border-radius: 16px;
@@ -248,8 +254,8 @@ body.dark .search-field i {
   }
   .nav-links li a {
     display: block;
-    margin-top: 20px;
-    padding: 0 0 20px 0;
+    margin: 0  0 10px 0;
+    padding: 10px 0;
   }
 }
 

@@ -108,8 +108,9 @@ const options = {
 	distance: '100px',
 	origin: "bottom",
 	duration:1000,
-	interval: 500,
-	viewFactor: 0.5,
+	interval: 100,
+	delay:500,
+	viewFactor: 0.1,
 }
 
 ScrollReveal().reveal('.reveal', {
